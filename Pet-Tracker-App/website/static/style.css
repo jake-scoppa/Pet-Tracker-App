@@ -1,0 +1,115 @@
+
+
+:root{
+--text: rgb(7, 20, 33);
+--background: rgb(230, 240, 249);
+--primary: rgb(35, 97, 159);
+--secondary: rgb(205, 224, 244);
+--accent: rgb(33, 37, 41); 
+}
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Vina Sans', sans-serif;
+
+*/
+
+body{
+    background-color: var(--background);
+    color:rgb(7, 20, 33) ;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    min-height: 100vh;
+}
+
+h1{
+    font-size: 50px;
+    font-family: 'Lobster', sans-serif;
+    margin: 1rem;
+}
+
+h2{
+    font-family: 'Lobster', sans-serif;
+    margin: 1rem;
+}
+
+button{
+    margin: 0.5rem;
+}
+
+
+.login_page{
+    background-color: var(--accent);
+    margin-top: 6rem;
+    padding-bottom: 2rem;
+    color: var(--secondary);
+    box-shadow: 2px 2px 5px black;
+}
+
+.login_button{
+    color: var(--secondary);
+    background-color: var(--primary);
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    width: 10vw;
+    padding: 8px;
+    transition: all 0.5s ease-out;
+    background: linear-gradient(to right, var(--accent) 50%, rgb(35, 97, 159) 50%);
+    background-size: 300% 200%;
+    background-position: right;
+}
+
+.login_button:hover{
+    background-position: left;
+}
+
+.form-control{
+    background-color: rgb(230, 240, 249);
+}
+
+.signup_page{
+    background-color: var(--accent);
+    margin-top: 6rem;
+    padding-bottom: 2rem;
+    color: var(--secondary);
+    box-shadow: 2px 2px 5px black;
+}
+
+.mainBody{
+    background-color: var(--accent);
+    color: var(--secondary);
+    margin-bottom: 4rem;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-inner-spin-button{
+   display: none;
+}
+
+.edit{
+    margin: 0.5rem;
+}
+
+.pet_cards{
+    margin-bottom: 1rem;
+}
+
+p{
+    margin: 0;
+}
+
+.svgs{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.list-group-item{
+    background-color: var(--background);
+    border: none;
+    border-bottom: solid 1px var(--accent);
+}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% block title %} Home {% endblock%}
+{% block content %}
+<div class="container mt-5">
+    <h1 class="mb-4">Update Pet</h1>
+
+    <form method="POST" action="{{ url_for('views.edit_pet', pet_id=pet.id) }}">
+        <div class="mb-3">
+            <label for="name" class="form-label">Pet Name</label>
+            <input type="text" class="form-control" id="name" name="name" value="{{ pet.name }}" required>
+        </div>
+        <div class="mb-3">
+            <label for="feeding_schedule" class="form-label">Feeding Schedule</label>
+            <input type="text" class="form-control" id="feeding_schedule" name="feeding_schedule" value="{{ pet.feeding_schedule }}" required>
+        </div>
+        <div class="mb-3">
+            <label for="weight" class="form-label">Weight</label>
+            <input type="number" class="form-control" id="weight" name="weight" value="{{ pet.weight }}">
+        </div>
+        <div class="mb-3">
+            <label for="notes" class="form-label">Notes</label>
+            <textarea class="form-control" id="notes" name="notes" rows="4" value="{{ pet.notes }}"></textarea>
+        </div>
+        <button type="submit" class="btn btn-outline-success">Save Changes</button>
+    </form>
+
+    <a href="{{ url_for('views.home') }}" class="btn btn-secondary mt-3">Cancel</a>
+</div>
+
+{% endblock %}

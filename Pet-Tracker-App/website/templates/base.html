@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Playfair+Display&family=Vina+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>{% block title%}Home{% endblock %}</title>
+</head>
+<body class="bg-secondary-color">
+    <header class="container-fluid"><h1 class="text-center">My Pet Tracker</h1></header>
+    <div class="svgs">
+        <!-- Your SVG code goes here -->
+        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+        <svg width="50px" height="50px" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M203.649 130.718C202.646 143.465 203.234 156.293 204.925 168.972C214.145 238.087 244.754 177.369 232.994 118.604" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M245.536 109.548C256.203 102.57 329.311 51.0408 334.604 77.4954C340.357 106.24 281.701 134.658 266.587 153.54C233.414 194.983 240.37 267.19 258.932 313.571" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M188.757 172.667C160.768 213.661 142.788 258.933 133.258 306.557" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M187.483 252.363C200.257 240.696 232.704 250.007 225.121 270.216C220.22 283.275 206.715 296.359 196.414 305.282C192.752 308.454 188.223 311.744 183.655 313.571C182.591 313.996 179.656 314.037 180.465 314.846C182.301 316.68 227.891 302.968 230.224 312.296C231.285 316.538 196.757 326.763 192.586 327.598C170.905 331.931 145.057 331.208 126.242 318.671C122.064 315.888 120.725 309.47 117.31 307.196C116.889 306.915 81.0682 330.857 65 321.222" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M254.625 115.931C255.217 117.802 256.719 119.256 257.955 120.738" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M327.549 76.7464C350.69 73.7804 307.915 95.8559 326.006 77.7741" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="50px" height="50px" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M245.2 134.289C294.12 73.9855 219.025 82.2174 208.126 76.763C204.296 74.849 200.528 56.3705 192.005 60.6375C178.88 67.2036 179.995 101.383 178.571 112.785C177.798 118.991 169.133 127.877 166.285 134.289C161.739 144.521 156.744 156.692 148.393 169.402C140.043 182.113 122.592 191.967 113.857 201.681C76.682 243.002 92.6204 291.579 133.435 322.992C174.716 354.764 347.131 342.906 298.399 269.769" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M225.903 162.283C238.018 206.627 220.627 252.936 220.627 296.357C220.627 301.354 230.543 296.532 235.401 297.425" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M162.667 208.879C172.419 210.315 181.319 217.474 188.222 224.166C222.582 257.481 178.688 279.87 176.257 291.647C175.708 294.311 187.035 296.145 189.31 296.389" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M211.536 62.994C218.161 56.7795 219.425 67.6568 220.627 73.6378" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="50px" height="50px" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M168.444 277.9C146.549 284.142 129.279 274.912 124.104 251.416C121.337 238.843 122.76 220.72 124.557 208.032C126.551 193.939 128.984 180.4 137.229 168.758C156.677 141.272 227.81 136.426 250.79 159.621C273.248 182.288 295.328 271.011 247.623 280.644C231.007 283.996 213.834 271.241 197.855 269.224C191.89 268.475 178.292 271.964 176.592 271.964" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M137.326 281.202C141.944 302.488 165.009 307.837 183.922 311.887" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M180.512 282.339C181.009 292.763 186.283 305.266 188.467 307.341" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M218.015 284.611C216.212 294.652 211.694 303.355 206.65 311.887" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M253.247 286.885C244.445 304.876 229.871 308.212 211.197 309.614" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M163.465 148.234C125.556 87.3997 114.161 114.772 68 144.698" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M241.883 143.688C246.082 136.758 249.568 129.351 253.138 122.055C255.965 116.273 267.862 90.1906 274.289 88.0014C274.586 87.8986 275.154 93.6844 275.189 93.9837C275.945 100.167 279.253 105.412 282.39 110.55C292.168 126.549 317.151 134.542 332.801 124.36" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M165.696 234.607C165.611 230.335 165.045 226.263 164.643 222.105" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M234.32 233.47C234.525 229.285 234.671 225.179 234.671 220.969" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="50px" height="50px" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M155.671 70.417C164.357 63.4859 175.013 62.5211 185.43 65.9935C188.876 67.142 196.035 76.0254 197.897 73.2323C212.474 51.3673 245.146 64.7784 254.199 82.8837C266.207 106.9 251.824 143.429 232.885 158.891C224.168 166.007 215.608 165.955 208.756 166.934C141.626 176.524 118.648 116.998 145.618 83.2859" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M150.193 97.9006C165.624 93.3383 176.853 102.915 179.8 108.22C182.605 113.269 186.407 118.791 188.245 124.306C189.209 127.2 194.955 152.859 195.484 152.859C196.402 152.859 198.866 126.642 199.119 124.364C200.645 110.628 218.489 83.9463 239.823 96.4244" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M187.003 303.032C187.003 318.931 185.228 328.26 187.003 340.689" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M212.873 303.621C215.729 340.492 204.362 336.416 232.305 346.019" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M187.003 340.688C183.876 341.922 176.937 347.19 174.309 349.201" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M187.612 340.688C190.077 341.659 191.979 342.293 193.971 343.212" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M206.204 340.924C204.971 341.237 200.867 346.79 199.66 347.191" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M134.781 167.966C132.014 226.683 158.473 249.142 158.473 304.971" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M260.57 166.417C264.966 266.944 250.443 279.991 243.308 299.737" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M165.075 102.324C162.413 115.178 167.908 119.281 178.679 113.895" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M212.143 109.985C218.229 120.926 228.249 109.651 228.249 101.697" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M171.823 110.069C172.074 108.977 171.656 107.995 171.542 106.967" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M219.765 109.928C219.554 106.43 219.284 102.907 218.496 99.4935" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M259.571 165.349C270.481 175.848 282.061 188.509 286.439 202.541C295.681 232.154 286.558 274.526 258.864 294.112C253.65 297.799 250.272 303.117 243.308 303.8" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M134.782 167.966C105.336 185.586 108.827 218.939 115.907 245.785C136.026 288.855 142.584 292.086 153.726 302.354" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M147.927 80.6144C167.12 48.4751 224.422 38.8413 245.249 70.1438" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="50px" height="50px" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M300.736 121.416C289.046 117.088 272.523 107.949 251.165 94C252.179 142.139 254.939 169.927 259.445 177.365C266.205 188.522 294.29 176.763 334.697 183.889C342.381 159.703 318.27 127.907 300.736 121.416Z" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M302.145 131.436C286.036 123.785 267.885 143.36 281.508 158.32C285.308 162.491 290.316 164.868 296.2 163.361C305.435 160.994 316.565 149.408 306.547 138.036" stroke="#000000" stroke-opacity="0.9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M251.166 122.625C202.16 80.9014 134.883 88.1889 92.7631 122.625C15.806 185.539 109.344 356.035 185.262 291.616C208.146 272.199 208.146 257.43 188.511 231.747C170.575 208.286 127.878 210.24 113.295 238.859C98.6232 267.648 165.197 302.897 176.015 260.448C180.645 242.286 144.638 220.465 146.537 248.377" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M236.621 172.943C235.377 177.525 224.012 183.334 202.527 190.369C203.649 196.317 220.018 216.937 220.71 222.949" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M293.715 149.98C293.715 147.652 293.715 145.336 293.715 143.019" stroke="#000000" stroke-opacity="0.9" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M236.621 172.999C136.074 170.968 82.2808 191.758 75.2405 235.37" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="50px" height="50px" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M72.6124 231.153C134.781 193.503 314.564 79.9927 334.689 221.804C339.154 253.253 294.397 255.368 274.842 261.274C190.714 286.678 72.7366 182.988 68.4835 184.418C61.0303 186.917 66.1202 211.243 67.4536 216.612" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M213.148 141.452C192.038 124.537 192.042 144.421 197.372 160.519" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M231.895 280.837C217.936 284.449 212.383 283.438 215.197 273.341" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M296.4 195.222C295.802 194.92 295.199 194.618 294.601 194.315" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M249.302 182.009C275.308 209.712 235.787 215.214 261.354 234.39" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M215.888 196.783C211.452 209.464 227.093 208.566 230.545 215.381C231.259 216.79 198.778 224.502 224.266 237.077" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M175.42 198.126C171.662 208.426 178.166 227.838 185.029 231.704" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="50px" height="50px" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M140.126 298C126.478 278.853 54.833 167.153 70.1301 153.966C112.157 117.747 160.987 233.547 169 254.261" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M231 268.972C243.441 246.461 259.817 226.683 274.612 205.819C278.22 200.734 320.083 138.326 322.768 139.006C343.317 144.18 326.022 199.098 305.37 238.087C284.718 277.076 251.134 295.672 251.805 297.023C255.377 304.223 287.8 289.396 292.786 290.026" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M259 298C266.518 299.647 276.168 308.608 279 310" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M254 299C255.514 302.597 255.482 306.329 256 310" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M151 309C145.734 312.243 119.294 310.792 114 314" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M142 314C140.604 316.008 141.333 318.665 141 321" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M142 300C144.572 305.007 147.155 307.391 151 310" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M118 161.604C168.8 81.3012 290 44.8316 290 181" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M186 87.9739C175.016 73.6925 165.556 87.8316 164 101" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M256 80.8324C269.395 72.3387 274.059 84.7859 272.804 94" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M259 141C238.262 134.454 210.707 135.187 188 138.362" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="50px" height="50px" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M261.657 136.783C264.359 136.525 289.354 130.872 288.996 136.452C288.576 143 279.946 155 278.704 155C272.125 155 264.698 147.548 259 138.142" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M264 151C156.995 253.079 134.09 285 113 285" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M258 157C242.088 193.934 213.317 269.861 175.157 285.04C151.417 294.482 123.49 291.414 111 284.76" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M256 168C265.297 183.591 267.697 205.823 261.764 223" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M295 200C284.036 206.225 270.159 211.857 262 222" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M295 200C295 207.272 292.093 218.136 287 224" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M295 202C302.308 199.501 316.499 196.117 324 199.284" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M324.355 199C327.879 214.325 316.293 232.288 306 239" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M215 249C223.667 276 223.667 302.829 223.667 327.7C223.667 333.1 221.33 338.028 230 336.814" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M215 249.166C268.513 244.675 274.72 240.258 275.574 241.105C279.698 245.2 274.507 312.016 279.321 315.203C282.07 317.023 286.314 315.249 289 314.583" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M161 245C160.204 244.014 137.703 211.247 134.929 212.042C94.9308 291.886 81.4308 324.482 76.3913 328.526C74.6902 329.89 68.9577 327.911 67 327.583" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M237 80C253.973 89.322 265.959 112.438 268 134" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M332 64C312.49 71.3907 282.749 109.381 276 134" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="50px" height="50px" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M75.0385 246.879C61.7682 118.602 213.96 96.4821 271.051 191.802C276.089 200.214 300.873 239.741 286.588 250.473C274.05 259.891 202.593 257.654 159.373 257.654C134.405 257.654 110.166 257.654 86.9935 257.654" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.503384" d="M243.233 193.429C197.617 203.328 152.484 202.406 106.477 202.406" stroke="#000000" stroke-opacity="0.9" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.503384" d="M203.689 180.572C202.884 175.892 202.315 171.003 201.498 166.429" stroke="#000000" stroke-opacity="0.9" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.503384" d="M154.213 180.929C154.899 174.833 156.011 168.262 157.788 163.857" stroke="#000000" stroke-opacity="0.9" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.503384" d="M242.991 237C243.13 230.111 241.57 224.157 240 218" stroke="#000000" stroke-opacity="0.9" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.503384" d="M188.032 237.143C187.438 232.326 188.496 227.618 188.948 223" stroke="#000000" stroke-opacity="0.9" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.503384" d="M127.219 233.286C127.699 229.871 127.954 226.401 128.314 223" stroke="#000000" stroke-opacity="0.9" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M293.729 212.039C369.21 133 369.21 212.039 290.969 248.714" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M327.467 198.746C327.649 198.202 327.831 197.654 328.013 197.11" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M275.488 263.519C273.174 265.673 267.167 264.424 262.586 264.246" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M115.508 259C107.958 275.803 96.1548 264.865 92.2852 259.813" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M62.6114 246.979C58.7136 247.489 54.729 248.349 51 249.163" stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#navbar"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <div class="navbar-nav">
+                <!-- {% if user.is_authenticated %} -->
+                <a href="/" class="nav-item nav-link" id="home">Home</a>
+                <a href="/logout" class="nav-item nav-link" id="logout">Logout</a>
+                <!-- {% else %} -->
+                <a href="/login" class="nav-item nav-link" id="login">Login</a>
+                <a href="/sign-up" class="nav-item nav-link" id="signUp">Sign Up</a>
+                <!-- {% endif %} -->
+            </div>
+        </div>
+    </nav>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages%}
+        {% if category == 'error' %}
+        <div class="alert alert-danger alter-dismissable fade show" role="alert">
+            {{ message }}
+            <button type="button" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        {% else %}
+        <div class="alert alert-success alter-dismissable fade show" role="alert">
+            {{ message }}
+            <button type="button" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        {% endif %}
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <footer class="bg-dark text-light py-2 fixed-bottom">
+        <div class="container text-center">
+            <p>&copy; 2023 MyPetTracker</p>
+        </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script 
+    type="text/javascript"
+    src="{{ url_for('static', filename='index.js')}}"></script>
+</body>
+</html>
